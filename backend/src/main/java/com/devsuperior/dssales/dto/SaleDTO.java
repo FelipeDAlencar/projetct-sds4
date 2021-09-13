@@ -1,15 +1,18 @@
 package com.devsuperior.dssales.dto;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+
 
 import com.devsuperior.dssales.entities.Sale;
-import com.devsuperior.dssales.entities.Seller;
 
-public class SaleDTO {
+public class SaleDTO implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private Integer visited;
 	private Integer deals;
